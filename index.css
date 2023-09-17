@@ -1,0 +1,29 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.container{
+	 width: 400px;
+	 float: left;
+	 height: 70px
+}
+.ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+	list-style: none;
+	margin-left: 62px;
+	margin-top: 27px;
+	font-size: 12px
+}
+ul li a{
+	text-decoration: none;
+	color: rgb(217, 224, 225);
+	font-family: arial;
+	font-weight: bold;
+	text-align: right;
+}    
+

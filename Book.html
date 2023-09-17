@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking car form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="number"],
+        input[type="date"],
+        input[type="time"],
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input[type="button"] {
+            background-color: #FC1E1E;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="button"]:hover {
+            background-color: #FF4949;
+        }
+
+        p {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        label button {
+            background-color: transparent;
+            color: #FC1E1E;
+            border: none;
+            padding: 0;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Booking Form</h2>
+    <form action="BOOK" method="get">
+        <label for="">Name <input type="text" name="name" id="name"placeholder="full name"></label>
+        <br>
+        <label for="">Phone number <input type="tel" name="phone" id="phone"></label>
+        <br>
+        <label for="">Number of passengers <input type="text" name="passengers" id="passengers"></label>
+        <br>
+        <label for="">Upload your Licence <input type="file" name="licence" id=""></label>
+        <br>
+        <label for=""> Vehicle: <br>
+             <input type="radio" name="car" id="">Limousine(8-12) <br>
+             <input type="radio" name="car" id="">Van(12-15) <br>
+             <input type="radio" name="car" id="">suv(6-7) <br>
+             <input type="radio" name="car" id="">Bus(50+) <br>
+             <input type="radio" name="car" id="">Toyota Hulix Vigo <br>
+             <input type="radio" name="car" id="">Land crusuire <br>
+             <input type="radio" name="car" id="">Land Rover <br>
+             <input type="radio" name="car" id="">Hyundai <br>
+             <input type="radio" name="car" id="">Volks Wagen <br>
+           <button>Others<br></button>        
+        </label>
+        <br>
+        <label for="">Pick up Date <input type="date" name="date" id=""placeholder="pickupdate"></label>
+        <br>
+        <label for="">Pick up time <input type="time" name="time" id=""placeholder="Time"></label>
+        <br>
+        <p>If pick up from the airport, Please enter airportname <input type="text" name="airport" id=""placeholder="airportname"></p>
+        <br>
+        <label for="">Destination <input type="text" name="street" id=""placeholder="street Address"> 
+            <br>
+        <input type="text" name="street" id="" placeholder="steert address line 2"><br>
+        <input type="text" name="street" id="" placeholder="city">
+        <input type="text" name="street" id="" placeholder="Region">
+        <br>
+       <input type="number" name="code" id="" placeholder="postal Zip code">
+       <input type="text" name="street" id=""placeholder="Rwanda">
+        </label>
+    </form>
+    <script src="/pop.js"></script>
+    <br>
+    <label for=""><input type="button" value="send"></label>
+</body>
+</html>
